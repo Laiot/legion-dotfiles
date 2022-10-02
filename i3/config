@@ -207,6 +207,10 @@ bar {
 
 exec --no-startup-id xdg-user-dirs-update
 
+# Disable any power saving feature
+exec --no-startup-id xset s off	
+exec --no-startup-id xset s off -dpms	
+
 # Remove title bars
 for_window [class="^.*"] border pixel 1
 
