@@ -233,6 +233,17 @@ bindsym $mod+r mode "resize"
 # important to make the magic work. And if you want to learn the secret behind
 # the trick, it's all in the `wordexp(3)`.
 #
+
+# Remove title bar from tiling windows
 default_border none
+
+# Shortcut to lock session
+exec swayidle -w \
+         timeout 60 'swaylock -f -c 000000' \
+         timeout 90 'swaymsg "output * dpms off"' \
+              resume 'swaymsg "output * dpms on"' \
+         before-sleep 'swaylock -f -c 000000' \
+         lock 'swaylock -f -c 000000'
+bindsym $mod+Shift+p exec loginctl lock-session
 
 include '$(/usr/libexec/sway/layered-include "/usr/share/sway/config.d/*.conf" "/etc/sway/config.d/*.conf" "${XDG_CONFIG_HOME:-$HOME/.config}/sway/config.d/*.conf")'
