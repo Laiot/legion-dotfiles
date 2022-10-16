@@ -1,4 +1,5 @@
 # dotfiles for my Lenovo Legion 7 16ACHg6
+This is still a WIP as I'm still encountering a lot of issues using sway on my Legion.
 
 ## HW
 - **CPU** AMD Ryzen 7 5800H
@@ -7,12 +8,10 @@
 - **RAM** 2x8GB SO-DIMM DDR4-3200
 
 ## SW
-- **OS** [Fedora Linux 37](https://getfedora.org/): based on this [iso](https://download.fedoraproject.org/pub/fedora/linux/releases/test/37_Beta/Spins/x86_64/iso/Fedora-i3-Live-x86_64-37_Beta-1.5.iso).
+- **OS** [Fedora Linux 37](https://getfedora.org/): based on the last nightly you can find [here](https://sway-sig.kutara.io/iso/).
 - **Kernel** Linux 5.19
-- **WM** [i3wm](https://i3wm.org/): you can find my configs [here](i3).
+- **WM** [swaywm](https://swaywm.org/): you can find my configs [here](sway).
 - **Shell** [zsh](https://www.zsh.org/): I'm using the default configs of the [Oh My ZSH!](https://ohmyz.sh/) project.
+- **Bar** [Waybar](https://github.com/Alexays/Waybar): Configs based on [rbnis'](https://github.com/rbnis/dotfiles/tree/master/.config/waybar).
 - **Terminal** [Alacritty](https://github.com/alacritty/alacritty)
 - **Editor** [Neovim](https://neovim.io/)
-
-## Next steps
-- Migrating to Fedora Sway Spin Sericea: I already tried using Gnome Wayland and Swaywm on this laptop but I encountered too many bugs. I will wait for the next Fedora release and try again, hoping it'll provide better drivers for my Nvidia card. 
